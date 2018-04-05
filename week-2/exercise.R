@@ -37,7 +37,7 @@ typeof(greetings)
 # "The difference in lengths is N"
 
 CompareLength <- function(vector1, vector2) {
-  n <- length(vector1) - length(vector2)
+  n <- abs(length(vector1) - length(vector2))
   return(paste("the difference in lengths is ", n))
 }
 
